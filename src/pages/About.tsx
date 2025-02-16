@@ -199,7 +199,7 @@ Expanded into the Engineering Division and undertook all responsibilities of dev
         </div>
 
         {/* Client Carousel */}
-        <motion.div
+        {/* <motion.div
           className="mt-16"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -207,7 +207,7 @@ Expanded into the Engineering Division and undertook all responsibilities of dev
         >
           <h2 className="text-3xl font-bold text-primary-600 mb-8 text-center">Our Trusted Clients</h2>
           <ProductCarousel />
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

@@ -48,6 +48,7 @@ const Home = () => {
             <p className="text-xl md:text-2xl mb-8">
               Leading manufacturer of precision engineering solutions
             </p>
+            <Link to="/products">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -55,6 +56,7 @@ const Home = () => {
             >
               Explore Our Products
             </motion.button>
+            </Link>
           </motion.div>
         </div>
       </motion.div>
