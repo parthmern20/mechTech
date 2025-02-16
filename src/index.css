@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #1a237e;
+    --secondary: #0d47a1;
+    --accent: #00bcd4;
+    --background: #fafafa;
+    --text: #212121;
+  }
+}
+
+.slick-slider {
+  margin-bottom: 30px;
+}
+
+.mechanical-bg {
+  background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(13, 71, 161, 0.9)),
+    url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80') center/cover no-repeat;
+}
+
+.animate-gear {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add responsive design utilities */
+@layer utilities {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .grid-layout {
+    @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105;
+  }
+}
